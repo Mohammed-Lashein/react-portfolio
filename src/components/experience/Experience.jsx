@@ -1,6 +1,6 @@
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <section id='experience'>Experience</section>
   )
 }
 export default Experience
