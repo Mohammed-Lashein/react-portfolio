@@ -1,6 +1,5 @@
 #experience {
     margin-top: 10rem;
-    height: 70vh;
 }
 .container.experience__container {
     display: grid;
@@ -68,7 +67,7 @@
     padding: 1rem;
 }
 #experience {
-    margin-top: -7rem;
+    margin-top: 12rem;
 }
 }
 @media screen and (max-width: 600px) {
@@ -81,6 +80,6 @@
         padding: 2rem 1rem;
 }
 #experience {
-    margin-top: 25rem;
+    margin-top: 24rem;
 }
 }
