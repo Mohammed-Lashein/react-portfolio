@@ -1,5 +1,7 @@
 #testimonials {
     margin-bottom: 50rem;
+    height: 50vh;
+    margin-top: 45rem;
 }
 .container.testimonials__container {
     width: 40%;

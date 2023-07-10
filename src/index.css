@@ -91,10 +91,6 @@ img {
     .container {
         width: var(--container-width-md);
     }
-    section {
-        margin-top: 6rem;
-        margin-top: 20rem;
-    }
 }
 /* media queries for phones */
 @media screen and (max-width: 600px) {
@@ -103,8 +99,5 @@ img {
     }
     section > h2 {
         margin-bottom: 2rem;
-    }
-    section {
-        margin-top: 25rem;
     }
 }

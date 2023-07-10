@@ -1,0 +1,81 @@
+.container.contact__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+}
+.contact__blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact__block {
+    background-color: var(--color-bg-variant);
+    border-radius: 1rem;
+    border: 1px solid transparent;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    transition: var(--transition);
+}
+.contact__block:hover {
+    background-color: transparent;
+    border-color: var(--color-primary);
+}
+.contact__block > * {
+    text-align: center;
+}
+.contact_block small {
+    color: var(--color-light);
+}
+.contact__block a {
+    color: var(--color-primary);
+    transition: var(--transition);
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+.contact__block a:hover {
+    color: var(--color-white);
+}
+.contact__icon {
+    font-size: 2rem;
+}
+input, textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: transparent;
+    border: 1px solid var(--color-light);
+    border-radius: 1rem;
+    caret-color: var(--color-primary);
+    font-size: 2rem;
+    color: var(--color-primary);
+    /* resize: none; */
+    /* The above is a new property for me (1st time to encounter it) .
+    So I wrote it just in case we wanted to prevent the resizing of the
+    textarea */
+
+}
+input:focus {
+    outline: none;
+    background-color: transparent;
+}
+button {
+    font-size: 1.2rem;
+}
+@media screen and (max-width: 1024px) {
+    .container.contact__container {
+        width: 58%;
+        grid-template-columns: 1fr;
+        row-gap: 4rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container.contact__container {
+        width: var(--container-width-sm);
+    }
+    #contacts {
+        margin-bottom: 40rem;
+    }
+    
+}
