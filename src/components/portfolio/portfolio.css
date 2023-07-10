@@ -1,0 +1,45 @@
+.container.portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.portfolio__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--color-bg-variant);
+    padding: 1.3rem;
+    border-radius: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.portfolio__item:hover {
+    border-color: var(--color-primary-variant);
+    background-color: transparent;
+}
+.portfolio__item-image {
+    min-height: 10rem;
+}
+.portfolio__item > h3 {
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .container.portfolio__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.2rem;
+    }
+    #portfolio {
+        margin-top: 38rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container.portfolio__container {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    #portfolio {
+        margin-bottom: 100rem;
+    }
+    
+}
