@@ -1,0 +1,70 @@
+
+footer {
+    background-color: var(--color-primary);
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 0rem;
+    min-height: 420px;
+}
+footer a {
+    color: var(--color-bg);
+}
+.footer__logo {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+.permalinks {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.footer__socials a {
+    background-color: var(--color-bg);
+    color: var(--color-white);
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    display: flex;
+    /* Using display: flex will make the icons look better (a square
+    shape instead of a stretched rectangle . ) */
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.footer__socials a:hover {
+    background-color: transparent;
+    color: var(--color-bg);
+    border-color: var(--color-bg);
+}
+.footer__copyright {
+    margin-bottom: 6rem;
+    color: var(--color-bg);
+}
+@media screen and (max-width: 1024px) {
+    footer {
+        margin-top: 40rem;
+        height: 70vh;
+        min-width: 52rem;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    footer {
+        margin-top: 40rem;
+        min-width: 30rem;
+        height: fit-content;
+    }
+    .permalinks {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+}
